@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: pink;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PatientPageController">
+   <children>
+      <Label layoutX="284.0" layoutY="58.0" text="Patient Information">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label layoutX="98.0" layoutY="226.0" text="Patient Name" />
+      <Label layoutX="98.0" layoutY="285.0" text="Patinet Department" />
+      <TextField fx:id="txtName" layoutX="312.0" layoutY="221.0" prefHeight="31.0" prefWidth="468.0" />
+      <TextField fx:id="txtDepartment" layoutX="312.0" layoutY="280.0" prefHeight="31.0" prefWidth="459.0" />
+      <Label layoutX="98.0" layoutY="263.0" prefHeight="21.0" prefWidth="405.0" />
+      <Button fx:id="btnBack" layoutX="59.0" layoutY="502.0" mnemonicParsing="false" onAction="#Back" prefHeight="39.0" prefWidth="109.0" text="Back" />
+      <Button fx:id="btnAdd" layoutX="722.0" layoutY="502.0" mnemonicParsing="false" onAction="#addPatient" prefHeight="39.0" prefWidth="130.0" text="Add" />
+      <ImageView fitHeight="187.0" fitWidth="197.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logohosp.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtRoom" layoutX="314.0" layoutY="335.0" />
+      <Label layoutX="100.0" layoutY="340.0" text="Room" />
+   </children>
+</AnchorPane>
